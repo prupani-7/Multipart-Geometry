@@ -29,6 +29,7 @@ import com.arcgismaps.geometry.Point
 import com.arcgismaps.geometry.SpatialReference
 import com.arcgismaps.mapping.ArcGISMap
 import com.arcgismaps.mapping.BasemapStyle
+import com.arcgismaps.mapping.Viewpoint
 import com.arcgismaps.mapping.symbology.PictureMarkerSymbol
 import com.arcgismaps.mapping.view.Graphic
 import com.arcgismaps.mapping.view.GraphicsOverlay
@@ -65,29 +66,39 @@ class MainActivity : AppCompatActivity() {
             graphicsOverlays.add(graphicsOverlay)
         }
 
+//        mapView.setViewpoint(Viewpoint(34.056295, -117.195800, 100000.0))
+//        mapView.setViewpoint(Viewpoint(34.0571947, -117.1953247, 500.0))
+
+
+
         // create a viewpoint
-        val startPoint = Point(-13431350.44, 5131196.25, SpatialReference.webMercator())
+        val startPoint = Point(-13046205.896, 4036493.110, SpatialReference.webMercator())
 
         lifecycleScope.launch {
             // set viewpoint of map view to starting point and scale
-            mapView.setViewpointCenter(startPoint, 3500.0)
+            mapView.setViewpointCenter(startPoint, 600.0)
         }
 
         // Create Multipoint geometry using collection of points representing each individual tree
         val multipoint = Multipoint(
             listOf(
-                Point(-13431214.195681, 5131066.057930),
-                Point(-13431220.44, 5131172.25),
-                Point(-13431385.44, 5131040.25),
-                Point(-13431435.44, 5131260.25),
-                Point(-13431320.44, 5131145.25),
-                Point(-13431420.44, 5131125.25),
-                Point(-13431260.44, 5131095.25),
-                Point(-13431320.44, 5131055.25),
-                Point(-13431295.44, 5131330.25),
-                Point(-13431465.44, 5131180.25),
-                Point(-13431260.44, 5131265.25),
-                Point(-13431380.44, 5131195.25),
+                Point(-13046198.211, 4036513.863),
+                Point(-13046194.120, 4036524.953),
+                Point(-13046188.702, 4036519.410),
+                Point(-13046198.404, 4036504.248),
+                Point(-13046195.129, 4036496.487),
+                Point(-13046188.322, 4036504.358),
+                Point(-13046200.104, 4036487.466),
+                Point(-13046188.666, 4036490.755),
+                Point(-13046190.700, 4036534.807),
+                Point(-13046199.247, 4036478.821),
+                Point(-13046192.160, 4036481.595),
+                Point(-13046192.986, 4036473.646),
+                Point(-13046192.986, 4036473.646),
+                Point(-13046187.440, 4036467.071),
+                Point(-13046195.186, 4036459.944),
+                Point(-13046186.834, 4036458.269),
+                Point(-13046199.529, 4036531.277)
             ),
             SpatialReference.webMercator()
         )
@@ -108,8 +119,8 @@ class MainActivity : AppCompatActivity() {
             pinDrawable as BitmapDrawable
         )
         pinSymbol.load().getOrThrow()
-        pinSymbol.width = 80f
-        pinSymbol.height = 70f
+        pinSymbol.width = 60f
+        pinSymbol.height = 50f
         return pinSymbol
     }
 }
