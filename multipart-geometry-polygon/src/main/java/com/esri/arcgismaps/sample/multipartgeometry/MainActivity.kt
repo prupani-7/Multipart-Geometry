@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
 
         lifecycleScope.launch {
             // set viewpoint of map view to starting point and scale
-            mapView.setViewpointCenter(startPoint, 5000000.0)
+            mapView.setViewpointCenter(startPoint, 1600000.0)
         }
 
         //create input polygons and add graphics to display these polygons in an overlay
@@ -97,8 +97,9 @@ class MainActivity : AppCompatActivity() {
                 Point(-16922037.192, 1720927.249),
                 Point(-16910716.151, 1706864.030),
                 Point(-16918722.930, 1684182.537),
-                Point(-16937975.506, 1670250.694),
-                Point(-16965194.254, 1691350.897),
+                Point(-16937975.506, 1677250.694),
+                Point(-16960194.254, 1691350.897),
+                Point(-16969194.254, 1692350.897),
                 Point(-16981445.483, 1709668.314),
             ),
             SpatialReference.webMercator()
@@ -159,10 +160,10 @@ class MainActivity : AppCompatActivity() {
         var polygonBuilder = PolygonBuilder(parts)
 
         // define a line symbol which will represent the boundary of the polygon
-        val lineSymbol = SimpleLineSymbol(SimpleLineSymbolStyle.Solid, Color.blue, 2f)
+        val lineSymbol = SimpleLineSymbol(SimpleLineSymbolStyle.Solid, Color.fromRgba(153, 221, 255), 2f)
 
         // create and add a green graphic to fill color of the Polygon Builder.
-        val greenFill = SimpleFillSymbol(SimpleFillSymbolStyle.Solid, Color.green, lineSymbol)
+        val greenFill = SimpleFillSymbol(SimpleFillSymbolStyle.Solid, Color.fromRgba(128, 255, 170 ), lineSymbol)
         graphicsOverlay.graphics.add(Graphic(polygonBuilder.toGeometry(), greenFill))
 
     }
