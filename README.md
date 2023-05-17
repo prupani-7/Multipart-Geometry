@@ -1,10 +1,12 @@
 # Multipart-Geometry
-Demonstarte creation of Multipart Polygon, Polyline and Multipoint geometry using ArcGIS Maps SDK for Kotlin.
+Demonstrate creation of Multipart Polygon, Polyline and Multipoint geometry using ArcGIS Maps SDK for Kotlin.
 
 ## Overview
 This repository contains the code which is mentioned in the blog post `Mapping complex data with Multipart Geometries using the ArcGIS Maps SDKs for Native Apps.`
 
 It creates collection of trees on Esri campus representing the multipoint geometry, adding a couple islands and a lake within an island representing a single multipart polygon geometry and creating four river streams constituting a single river which ultimately connects to the ocean representing multipart polyline geometry.
+
+There are three example apps in this repo namely multipart-polygon-geometry, multipart-polyline-geometry and multipoint-geometry. Each of them can be run as an individual app.
 
 ## Prerequisites
 
@@ -33,7 +35,7 @@ The API_KEY property should contain quotes around the key itself:
 API_KEY = "YOUR_API_KEY" // path: /Users/<user_name>/.gradle/gradle.properties
 ```
 
-## Run a sample
+## Run an example app
 
 Once you have set up your developer environment you can run any example app from within Android Studio by selecting the app module from the **Edit Configurations** drop down and clicking the **Run** button from the toolbar.
 
