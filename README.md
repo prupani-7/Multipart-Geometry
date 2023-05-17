@@ -4,8 +4,7 @@ Creating Multipart Polygon, Polyline and Multipoint geometry using ArcGIS Maps S
 ## Overview
 This repository contains the code which is mentioned in the blog post `Mapping complex data with Multipart Geometries using the ArcGIS Maps SDKs for Native Apps.`
 
-It creates collection of trees representing the multipoint geometry, multiple islands and a lake within an island represented as a single multipart polygon geometry, 
-a river branching into many streams representing multipart polyline geometry.
+It creates collection of trees on Esri campus representing the multipoint geometry, adding a couple islands and a lake within an island representing a single multipart polygon geometry and creating four river streams constituting a single river which ultimately connects to the ocean representing multipart polyline geometry.
 
 ## Prerequisites
 
@@ -23,9 +22,6 @@ Once the project is cloned to disk you can import into Android Studio:
 * From the Welcome to Android Studio screen, click the **Open** button. (If you're already inside a project, click **File > Open** in the menu bar instead.)
 * Navigate to the **Multipart_Geometry/** folder and click **OK**.
 
-## Accessing Esri location services
-
-Accessing Esri location services, including basemaps, routing, and geocoding, requires authentication using either an API Key or an ArcGIS identity:
 
 ### API key
 
@@ -39,10 +35,13 @@ API_KEY = "YOUR_API_KEY" // path: /Users/<user_name>/.gradle/gradle.properties
 
 ## Run a sample
 
-Once you have set up your developer environment you can run any sample from within Android Studio by selecting the app module from the **Edit Configurations** drop down and clicking the **Run** button from the toolbar.
+Once you have set up your developer environment you can run any example app from within Android Studio by selecting the app module from the **Edit Configurations** drop down and clicking the **Run** button from the toolbar.
 
+Multipoint Geometry:
 ![Multipoint-Geometry.png](img_3.png)
 
+Multipart-Polygon-Geometry:
 ![Multipart-Polygon-Geometry.png](img_4.png)
 
+Multipart-Polyline-Geometry:
 ![Multipart-Polyline-Geometry.png](img_5.png)
