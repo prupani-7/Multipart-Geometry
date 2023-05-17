@@ -78,19 +78,7 @@ class MainActivity : AppCompatActivity() {
             // set viewpoint of map view to starting point and scale
             mapView.setViewpointCenter(startPoint, 250.0)
         }
-
-        // create a buffer around the clicked location
-        lifecycleScope.launch {
-            mapView.onSingleTapConfirmed.collect { event ->
-                // get map point tapped, return if null
-                val mapPoint = event.mapPoint ?: return@collect
-                mapPoint.x
-                mapPoint.y
-                val screenCoordinate = event.screenCoordinate
-                screenCoordinate.x
-                screenCoordinate.y
-            }
-        }
+        
         constructRiverStream()
     }
 
