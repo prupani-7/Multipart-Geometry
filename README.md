@@ -41,8 +41,8 @@ API_KEY = "YOUR_API_KEY" // path: /Users/<user_name>/.gradle/gradle.properties
 
 Once you have set up your developer environment you can run any sample from within Android Studio by selecting the app module from the **Edit Configurations** drop down and clicking the **Run** button from the toolbar.
 
-![Multipoint-Geometry.png](img.png)
+![Multipoint-Geometry.png](img_3.png)
 
-![Multipart-Polygon-Geometry.png](img_1.png)
+![Multipart-Polygon-Geometry.png](img_4.png)
 
-![Multipart-Polyline-Geometry.png](img_2.png)
+![Multipart-Polyline-Geometry.png](img_5.png)
