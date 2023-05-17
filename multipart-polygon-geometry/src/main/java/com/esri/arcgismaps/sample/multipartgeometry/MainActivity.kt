@@ -38,11 +38,6 @@ import com.arcgismaps.mapping.view.GraphicsOverlay
 import com.example.multipartgeometry.multipartgeometrypolygon.databinding.ActivityMainBinding
 import kotlinx.coroutines.launch
 
-private val Color.Companion.blue: Color
-    get() {
-        return fromRgba(0, 0, 255, 255)
-    }
-
 class MainActivity : AppCompatActivity() {
 
     // set up data binding for the activity
