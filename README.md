@@ -8,6 +8,19 @@ It creates collection of trees on Esri campus representing the multipoint geomet
 
 There are three example apps in this repo namely multipart-polygon-geometry, multipart-polyline-geometry and multipoint-geometry. Each of them can be run as an individual app.
 
+Multipoint Geometry:  
+  
+![Multipoint-Geometry.png](img_3.png)
+
+Multipart-Polygon-Geometry:  
+  
+![Multipart-Polygon-Geometry.png](img_4.png)
+
+Multipart-Polyline-Geometry:  
+  
+![Multipart-Polyline-Geometry.png](img_5.png)
+
+
 ## Prerequisites
 
 * The example apps in this project are building with `compileSdkVersion 33`
@@ -39,14 +52,36 @@ API_KEY = "YOUR_API_KEY" // path: /Users/<user_name>/.gradle/gradle.properties
 
 Once you have set up your developer environment you can run any example app from within Android Studio by selecting the app module from the **Edit Configurations** drop down and clicking the **Run** button from the toolbar.
 
-Multipoint Geometry:  
-  
-![Multipoint-Geometry.png](img_3.png)
 
-Multipart-Polygon-Geometry:  
-  
-![Multipart-Polygon-Geometry.png](img_4.png)
+## Issues
 
-Multipart-Polyline-Geometry:  
-  
-![Multipart-Polyline-Geometry.png](img_5.png)
+Have a question about functionality in the ArcGIS Maps SDK for Kotlin? Want to ask other users for development advice, discuss a workflow, ask Esri staff and other users about bugs in the API? Use [GeoNet](https://community.esri.com/t5/kotlin-maps-sdk-questions/bd-p/kotlin-maps-sdk-questions) for any general questions like this, so others can learn from and contribute to the discussion.
+
+Do you have something to [contribute](.github/CONTRIBUTING.md)? Send a pull request! New Samples, bug fixes and documentation fixes are welcome.
+
+Have a problem running one of the samples in this repo? Does the sample not work on a specific device? Have questions about how the code in this repo is working? Want to request a specific sample? In that case, [submit a new issue](https://github.com/Esri/arcgis-maps-sdk-kotlin-samples/issues).
+
+## Contributing
+
+Anyone and everyone is welcome to [contribute](.github/CONTRIBUTING.md). We do accept pull requests.
+
+1. Get Involved
+2. Report Issues
+3. Contribute Code
+4. Improve Documentation
+
+Please see our [guidelines for contributing doc](https://github.com/Esri/contributing/blob/master/README.md)
+
+## Licensing
+
+Copyright 2022 Esri
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+A copy of the license is available in the repository's [LICENSE](LICENSE?raw=1) file
+
+
