@@ -1,5 +1,5 @@
 # Multipart-Geometry
-Creating Multipart Polygon, Polyline and Multipoint geometry using ArcGIS Maps SDK for Kotlin
+Demonstarte creation of Multipart Polygon, Polyline and Multipoint geometry using ArcGIS Maps SDK for Kotlin.
 
 ## Overview
 This repository contains the code which is mentioned in the blog post `Mapping complex data with Multipart Geometries using the ArcGIS Maps SDKs for Native Apps.`
