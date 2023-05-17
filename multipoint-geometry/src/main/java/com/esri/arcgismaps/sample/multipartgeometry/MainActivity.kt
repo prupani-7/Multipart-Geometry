@@ -29,7 +29,6 @@ import com.arcgismaps.geometry.Point
 import com.arcgismaps.geometry.SpatialReference
 import com.arcgismaps.mapping.ArcGISMap
 import com.arcgismaps.mapping.BasemapStyle
-import com.arcgismaps.mapping.Viewpoint
 import com.arcgismaps.mapping.symbology.PictureMarkerSymbol
 import com.arcgismaps.mapping.view.Graphic
 import com.arcgismaps.mapping.view.GraphicsOverlay
@@ -65,11 +64,6 @@ class MainActivity : AppCompatActivity() {
             // create graphics overlays to show the inputs and results of the spatial operation
             graphicsOverlays.add(graphicsOverlay)
         }
-
-//        mapView.setViewpoint(Viewpoint(34.056295, -117.195800, 100000.0))
-//        mapView.setViewpoint(Viewpoint(34.0571947, -117.1953247, 500.0))
-
-
 
         // create a viewpoint
         val startPoint = Point(-13046205.896, 4036493.110, SpatialReference.webMercator())
