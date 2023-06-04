@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
             // set viewpoint of map view to starting point and scale
             mapView.setViewpointCenter(startPoint, 250.0)
         }
-        
+        // create river streams and add graphics to display these polylines in an overlay
         constructRiverStream()
     }
 
@@ -131,7 +131,7 @@ class MainActivity : AppCompatActivity() {
             SpatialReference.webMercator()
         )
 
-        // // create fifth river stream which is basically a Mutable Part and connects to the first river stream
+        // create fifth river stream which is basically a Mutable Part and connects to the first river stream
         val riverstream5 = MutablePart.createWithPoints(
             listOf(
                 // add points to the point collection
